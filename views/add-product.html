@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - เพิ่มสินค้า</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>เพิ่มสินค้าใหม่</h1>
+      <nav>
+        <a href="/admin">กลับไปหน้ารายการสินค้า</a>
+      </nav>
+    </header>
+    <div class="container">
+      <form id="add-product-form">
+        <label for="name">ชื่อสินค้า:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="price">ราคา:</label><br />
+        <input type="number" id="price" name="price" required /><br /><br />
+        <label for="stock">จำนวนคงเหลือ:</label><br />
+        <input type="number" id="stock" name="stock" required /><br /><br />
+        <label for="description">รายละเอียด:</label><br />
+        <textarea id="description" name="description"></textarea><br /><br />
+        <label for="imageUrl">URL รูปภาพ:</label><br />
+        <input type="text" id="imageUrl" name="imageUrl" /><br /><br />
+        <button type="submit">บันทึกสินค้า</button>
+      </form>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

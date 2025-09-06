@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ชำระเงิน</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ร้านขายยา</h1>
+      <nav>
+        <a href="/">หน้าแรก</a> | <a href="/cart">ตะกร้าสินค้า</a> |
+        <a href="/admin">สำหรับ Admin</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>ข้อมูลสำหรับจัดส่งและชำระเงิน</h2>
+      <form id="checkout-form">
+        <label for="name">ชื่อ-นามสกุล:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="address">ที่อยู่:</label><br />
+        <textarea id="address" name="address" required></textarea><br /><br />
+
+        <label for="phone">เบอร์โทรศัพท์:</label><br />
+        <input type="tel" id="phone" name="phone" required /><br /><br />
+
+        <label for="payment">ช่องทางการชำระเงิน:</label><br />
+        <select id="payment" name="payment" required>
+          <option value="bank_transfer">โอนเงินผ่านธนาคาร</option>
+          <option value="credit_card">บัตรเครดิต</option>
+          <option value="cod">เก็บเงินปลายทาง</option></select
+        ><br /><br />
+
+        <button type="submit" class="btn">ยืนยันการสั่งซื้อ</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ตะกร้าสินค้า</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      .cart-item {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .cart-item button {
+        cursor: pointer;
+        padding: 5px 10px;
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ร้านขายยา</h1>
+      <nav>
+        <a href="/">หน้าแรก</a> | <a href="/cart">ตะกร้าสินค้า</a> |
+        <a href="/admin">สำหรับ Admin</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>ตะกร้าสินค้า</h2>
+      <div id="cart-items">
+        <p id="cart-empty-message" style="display: none">ไม่มีสินค้าในตะกร้า</p>
+      </div>
+      <h3>ราคารวม: <span id="total-price">0</span> บาท</h3>
+      <a href="/checkout" id="checkout-btn" class="btn">ดำเนินการชำระเงิน</a>
+      <a href="/" class="btn">กลับไปหน้าร้านค้า</a>
+    </div>
+  </body>
+</html>

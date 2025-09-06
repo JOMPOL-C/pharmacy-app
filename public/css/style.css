@@ -1,0 +1,183 @@
+/* General Body and Layout */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #343a40;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+
+/* Header and Navigation */
+header {
+  background: #ffffff;
+  color: #007bff;
+  padding: 1.5rem 0;
+  min-height: 70px;
+  border-bottom: 3px solid #e9ecef;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+header nav {
+  margin-top: 1rem;
+}
+
+header a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #0056b3;
+}
+
+/* Product Grid and Cards */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  font-size: 1.25rem;
+  color: #007bff;
+  margin: 1rem 0 0.5rem;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+/* Buttons */
+.btn,
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+  background-color: #218838;
+}
+
+.add-to-cart {
+  margin-top: 1rem;
+}
+
+/* Form Styles (for Checkout and Admin) */
+form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #495057;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Table Styles (for Admin) */
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+
+th {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+/* Specific button styles */
+.remove-btn,
+.delete-btn {
+  background-color: #dc3545;
+  margin-left: 0.5rem;
+}
+
+.remove-btn:hover,
+.delete-btn:hover {
+  background-color: #c82333;
+}
